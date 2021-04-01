@@ -18,14 +18,14 @@
                 <li><a href="">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="about" id="about">
         <h2>About</h2>
-        <p>T48 Fitness was founded by Jon and Sherry Hay in 2025.  Their goal was to create a fitness that not only focused on physical health but on spiritual health as well.  At the end of the day, they believe that spiritual training matters most.</p>
+        <p>T48 Fitness was founded by Jon and Sherry Hay in 2025.  Their goal was to create a fitness company that not only focused on physical health but on spiritual health as well.  At the end of the day, they believe that spiritual training matters most.</p>
         <blockquote cite="https://www.biblegateway.com/passage/?search=1%20Timothy%204%3A8&version=NIV">
             For physical training is of some value, but godliness has value for all things, holding promise for both the present life and the life to come.
             <cite>-1 Timothy 4:8</cite>
@@ -55,6 +55,33 @@
                     <p>What sets us apart from our competitors is our focus on spiritual health.  We want to help you become a man or woman after God's own heart.</p>
                 </div>
             </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form action="" method="POST">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@gmail.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone:</label>
+                    <input type="phone" id="phone" name="phone" placeholder="555-555-5555">
+                </div>
+                <div class="input-group">
+                    <label class="more-info-label">More Info?</label>
+                    <label for="yes"><input type="checkbox" id="yes" name="more-info" value="yes">Yes</label>
+                    <label for="no"><input type="checkbox" id="no" name="more-info" value="no">No</label>
+                </div>
+                <div class="input-group">
+                    <label for="message" class="message-label">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter a message">
+                    </textarea>
+                </div>
+            </form>
         </section>
     </main>
     <footer class="footer">

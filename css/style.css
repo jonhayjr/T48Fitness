@@ -16,6 +16,7 @@ body {
                             "nav"
                             "about"
                             "services"
+                            "contact"
                             "footer";
 }
 
@@ -130,6 +131,46 @@ body {
     line-height: 1.2;
 }
 
+/*Contact Us*/
+ /*Contact Us*/
+ form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-group label {
+    width: 100px;
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.25rem;
+}
+
+.more-info-label {
+    margin-right: 1rem;
+}
+
+textarea {
+    margin-top: 0.5rem;
+    height: 200px;
+}
 /*Footer*/
 .footer {
     grid-area: footer;
@@ -142,6 +183,7 @@ body {
     Media Queries
   ==================================== */
   @media (min-width: 768px) {
+    /*Navigation*/
     .nav {
         display: flex;
         justify-content: center;
@@ -150,5 +192,15 @@ body {
     .nav li {
         display: inline-block;
         padding: 1rem;
+    }
+    /*Services*/
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+
+    .card {
+       width: 80%;
+       margin: 1rem auto;
     }
   }
