@@ -1,4 +1,6 @@
-/***Base Elements***/
+/* ================================= 
+  Base Element Styles
+==================================== */
 * {
     padding: 0;
     margin: 0;
@@ -7,10 +9,65 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    
 }
 
  a {
      text-decoration: none;
  }
 
+ li {
+     list-style: none;
+ }
+
+/* ================================= 
+    Base Layout Styles
+  ==================================== */
+.header {
+    text-align: center;
+    background-image: url('../img/sb-headerbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: ghostwhite;
+    padding: 1.5rem;
+}
+
+.header-heading {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    border: solid 1px;
+    width: 200px;
+    margin: auto;
+    padding: 0.5rem;
+    background-color: rgba(112, 128, 144, 0.226);
+    opacity: 0.7;
+}
+
+.nav ul {
+    margin-top: 2rem;
+}
+
+.nav li {
+    margin-bottom: 2rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav li a {
+    color: ghostwhite;
+}
+  /* ================================= 
+    Media Queries
+  ==================================== */
+  @media (min-width: 768px) {
+    .nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav li {
+        display: inline-block;
+        padding: 1rem;
+    }
+  }
