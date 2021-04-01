@@ -14,7 +14,9 @@ body {
     display: grid;
     grid-template-areas: "header"
                             "nav"
-                            "about";
+                            "about"
+                            "services"
+                            "footer";
 }
 
  a {
@@ -23,6 +25,11 @@ body {
 
  li {
      list-style: none;
+ }
+
+ svg {
+     width: 50px;
+     height: 50px;
  }
 
 /* ================================= 
@@ -70,6 +77,8 @@ body {
     color: ghostwhite;
 }
 
+/*Main*/
+
 /*About*/
 .about {
     padding: 1rem;
@@ -98,6 +107,37 @@ body {
     display: block;
     margin-top: 1rem;
 }
+
+/*Services*/
+.services {
+    grid-area: services;
+}
+
+.services h2 {
+    margin-bottom: 1rem;
+}
+
+/*Cards*/
+.card {
+    margin: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.card p {
+    line-height: 1.2;
+}
+
+/*Footer*/
+.footer {
+    grid-area: footer;
+    margin-top: 1rem;
+    border-top: solid 1px;
+    padding: 1rem 0;
+}
+
   /* ================================= 
     Media Queries
   ==================================== */
